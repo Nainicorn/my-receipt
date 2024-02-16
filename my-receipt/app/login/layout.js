@@ -1,6 +1,6 @@
-import "./globals.css";
+import "./login.css";
 
-export default function RootLayout({ children }) {
+export default function LoginLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
