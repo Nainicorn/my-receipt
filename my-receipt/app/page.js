@@ -2,16 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import graphic from './graphic2.jpg'
+import icon from './favicon.ico'
 
 export default function Home() {
   return (
     <main>
       <nav>
-        <img src="favicon.ico" />
+      <Image className="img" src={icon} />
         <h3 className="title">My Receipt</h3>
         <div className="btn">Sign Up</div>
         
-        <div className="btn"><Link href="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link></div>
+        <Link className="btn" href="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link>
       </nav>
       <div className="section">
         <div className="section-1">
