@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import graphic from './graphic2.jpg'
-import icon from './favicon.ico'
+import icon from './logo_img.png'
 
 export default function Home() {
   return (

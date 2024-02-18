@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import receipt from './receipt.png'
-import icon from './favicon.ico'
+import receipt from './receipt_img.png'
+import icon from './logo_img.png'
 
 export default function Home() {
   return (
@@ -45,7 +44,9 @@ export default function Home() {
         </div>
         <div className="home-section-2">
           <div className="home-receipt-title-2">View Receipts</div>
-          {/* most recent img of receipt digitized */}
+          <div className="img-container">
+          <Image className="home-receipt-img" src={receipt} />
+          </div>
         </div>
       </div>
     </main>
