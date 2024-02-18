@@ -11,32 +11,80 @@ body {
 
 main {
   display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1{
+  font-size: 3rem;
+  color: white;
 }
 
 .login-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  padding: 10px;
-  background-color: rgba(112,128,144, .8);
-  border-radius: 5px;
+  position: relative;
+  background-color: rgba(112, 128, 144, 0.5);
+  width: 420px;
+  padding: 2.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .login-title {
   align-items: center;
 }
+
 .login-username {
-  width: 100px;
-  margin-bottom: 10px;
+  border-style: solid;
+  margin-bottom: 1rem;
+  border-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4rem;
+  width: 220px;
+  padding: 1rem 1rem;
 }
+
 .login-password {
-  width: 100px;
-  margin-bottom: 10px;
+  border-style: solid;
+  margin-bottom: 1rem;
+  border-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4rem;
+  width: 220px;
+  padding: 1rem 1rem;
 }
 
 .login-extras {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+}
+
+.login-btn {
+  background-color: #004cd9ff;
+  padding: 1rem 1rem;
+  text-align: center;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+  width: 220px;
+  font-weight: 500;
+  border-radius: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #0191f8;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: grab;
+}
+
+.img{
+  z-index: -1;
+  position: relative;
+  object-fit: cover;
 }

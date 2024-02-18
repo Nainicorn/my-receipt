@@ -10,6 +10,7 @@ export default function Home() {
         <img src="favicon.ico" />
         <h3 className="title">My Receipt</h3>
         <div className="btn">Sign Up</div>
+        
         <div className="btn"><Link href="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link></div>
       </nav>
       <div className="section">
